@@ -1,0 +1,89 @@
+body {
+    font-family: 'NanumSquare', "Apple SD Neo Gothic", "Malgun Gothic", dotum, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffffff;
+    color: #2793ff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#upload-section {
+    margin-bottom: 20px;
+}
+#upload-section button {
+    background-color: #2793ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#upload-section button:hover {
+    background-color: #1a73e8;
+}
+#poster-board {
+    background-color: #fdf6e3;
+    border: 2px solid #d4af37;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    position: relative;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#poster-board h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+#posters-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.poster {
+    position: absolute; /* For draggable */
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+.poster img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.poster-resize {
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    cursor: nw-resize;
+}
+.poster-buttons button {
+    background-color: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.poster-buttons button:hover {
+    background-color: #e44e4e;
+}
+a {
+    color: #2793ff;
+    text-decoration: none;
+}
